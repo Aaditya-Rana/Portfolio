@@ -1,0 +1,32 @@
+.project-body{
+    margin:0;
+    padding: 0;
+    min-height: calc(100vh - 100px);
+}
+
+.card-outer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 9rem;
+    color: rgb(45, 43, 82);
+}
+
+.card{
+    padding: 20px;
+    margin: 20px;
+    width: 250px;
+    min-height: 300px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 6px 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+.card:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2), 0 12px 40px rgba(0, 0, 0, 0.2);
+}
+
+.card-title{
+    font-weight: bold;
+    font-size: 16px;
+}

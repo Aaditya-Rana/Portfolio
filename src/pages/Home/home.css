@@ -1,0 +1,149 @@
+/* Gradient background */
+.main-body{
+  margin:0;
+  padding: 0;
+  min-height: calc(100vh - 100px);
+}
+
+.gradient-background {
+  background: linear-gradient(to right, #0f0c29, #302b63, #24243e);
+  color: white; /* Text color for better readability */
+  padding-top: 100px; /* Ensure the content is below the navbar */
+  padding-bottom: 50px; /* Adjust padding as needed */
+}
+
+/* Big and bold text styles */
+.big-bold-text {
+  font-size: 4rem;
+  font-weight: bold;
+}
+
+/* Name heading styles */
+.name-heading {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 20px; /* Adjust spacing */
+  background: linear-gradient(to right, #ff7e5f, #feb47b);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* About text styles */
+.about-text {
+  font-size: 1.7rem;
+  line-height: 1.6;
+}
+
+/* Role heading styles */
+.role-heading {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-top: 30px; /* Adjust spacing */
+}
+
+/* Profile image */
+.profile-image {
+  max-width: 300px; /* Adjust the size as needed */
+  border: 5px solid white; /* Optional: adds a white border around the image */
+  border-radius: 50%; /* Ensures the image is rounded */
+}
+
+/* Cursor animation */
+.cursor {
+  display: inline-block;
+  vertical-align: middle;
+  animation: blink 0.7s infinite; /* Cursor blinking animation */
+}
+.container .row{
+  display: flex !important;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center !important;
+}
+
+.text-left{
+  width: 40%;
+  letter-spacing: 1.2px;
+}
+.secondary-content{
+margin-top: 5rem;
+margin-bottom: 5rem;
+}
+
+.secondary-content{
+  font-size: 17px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  letter-spacing: 1.1px;
+}
+
+.s-content-heading{
+  color: rgb(45, 43, 82);
+  text-align: center;
+}
+.s-content-para{
+  color: rgb(45, 43, 82);
+  text-align: center;
+}
+.s-content-para-bold{
+  color: rgb(45, 43, 82);
+  font-weight: bold;
+  text-align: center;
+}
+.s-content-links{
+  display: flex;
+  width: 200px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.s-content-links i{
+  font-size: 25px;
+}
+@keyframes blink {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
+
+/* Media queries for responsive design */
+@media(max-width: 750px){
+  .main-body{
+    min-height: calc(100vh - 120px);
+  }
+}
+@media (max-width: 768px) {
+  .container .row {
+    flex-direction: column;
+    align-items: center; /* Center items in column layout */
+  }
+
+  .text-center {
+    text-align: center !important;
+  }
+
+  .text-left {
+    text-align: center !important;
+    width: 70%;
+  }
+
+  .role-heading {
+    text-align: center;
+  }
+
+  .image-container {
+    justify-content: center !important;
+    align-items: center !important;
+    margin-top: 20px; /* Add margin for separation on small screens */
+  }
+
+  .gradient-background {
+    padding-top: 100px; /* Ensure content is below navbar on mobile */
+    padding-bottom: 20px; /* Adjust padding as needed */
+  }
+}

@@ -1,0 +1,32 @@
+.main-about{
+    margin:0;
+    padding: 0;
+    min-height: calc(100vh - 100px);
+    color: rgb(45, 43, 82);
+    letter-spacing: 1.2px;
+    font-size: 16px;
+  }
+
+.a-description{
+    margin-top: 9rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.a-description img{
+    width: 500px;
+    height: 400px;
+    border-radius: 50%;
+}
+
+@media (max-width: 1007px){
+    .a-description{
+        flex-direction: column;
+        text-align: center;
+    }
+    .a-description img{
+        width: 70%;
+        height: 50%;
+    }
+}

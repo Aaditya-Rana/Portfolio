@@ -1,0 +1,32 @@
+.main-footer{
+    background: rgba(0, 0, 0, 0.8);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    letter-spacing: 1.4px;
+    font-size: 14px;
+    font-weight: bold;
+    height: 100px;
+}
+
+.main-footer .links{
+    width: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.main-footer .links i{
+    color: white;
+    font-size: 25px;
+}
+.main-footer .links i:hover{
+    color: gray;
+}
+
+@media(max-width: 750px){
+    .main-footer{
+        flex-direction: column;
+        height: 120px;
+    }
+}
