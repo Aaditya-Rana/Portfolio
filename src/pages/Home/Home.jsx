@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "./home.css"; // Custom CSS file
-import profileImage from "../../assets/images/profile.jpg"; // Replace with your image path
+import profileImage from "../../assets/images/AadityaProfile.jpg"; // Replace with your image path
 
 const Home = () => {
   const [roleText, setRoleText] = useState("");
